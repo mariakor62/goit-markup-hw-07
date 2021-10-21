@@ -87,6 +87,12 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-item__mail:hover,
+.footer-item__mail:focus {
+  cursor: pointer;
+  color: #2196f3;
+}
+
 .contacts-tel {
   font-weight: 400;
   font-size: 14px;
@@ -98,10 +104,7 @@
 .contacts-tel:focus {
   color: #2196f3;
 }
-.footer-item:hover,
-.footer-item:focus {
-  color: #2196f3;
-}
+
 .text-title {
   font-weight: bold;
   font-size: 14px;

@@ -651,10 +651,6 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-item__mail {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .contact-items {
   display: block;
   -webkit-box-pack: center;
@@ -750,12 +746,17 @@ img {
   margin-right: 10px;
 }
 
-.footer-mail__text {
+.footer-item__mail {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item__mail:hover,
+.footer-item__mail:focus {
+  color: #2196f3;
 }
 
 .contacts-tel {
@@ -768,11 +769,6 @@ img {
 
 .contacts-tel:hover,
 .contacts-tel:focus {
-  color: #2196f3;
-}
-
-.footer-items__mail:hover,
-.footer-items__mail:focus {
   color: #2196f3;
 }
 
