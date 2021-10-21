@@ -9,7 +9,7 @@
   color: #212121;
 }
 .cards__list {
-  display: flex;
+  @extend %flexCentered;
 }
 .cards__item:not(:last-child) {
   margin-right: 30px;
@@ -27,9 +27,10 @@
   opacity: 0.8;
 }
 .image-title {
-  display: flex;
-  justify-content: center;
+  @extend %flexCentered;
+}
 
+.image-title {
   font-weight: 700;
   font-size: 14px;
   font-style: normal;
