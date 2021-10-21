@@ -2,7 +2,8 @@
   background-color: #f5f4fa;
 }
 .media__list {
-  @extend %flexCentered;
+  display: flex;
+  justify-content: center;
 }
 
 .social-icon {
