@@ -11,9 +11,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+
     <link rel="stylesheet" href="./css/main.min.css" />
 
 </head>
@@ -21,10 +22,8 @@
 <body>
     <!--Шапка-->
     <header class="page-header">
-        <nav class="page-header__nav">
+        <nav class="page-header__nav container">
             <a class="logo" href="index.html"><span class="web">Web</span>Studio</a>
-            <!-- <nav class="header-nav"> -->
-            <!--header-list instead site-nav-->
             <ul class="site-nav">
                 <li class="site-nav__item"><a class="site-nav__link site-nav__link--current"
                         href="./index.html">Студия</a>
@@ -34,7 +33,6 @@
                 <li class="site-nav__item"><a class="site-nav__link" href="/">Контакты</a>
                 </li>
             </ul>
-            <!-- </nav> -->
             <ul class="header-right">
                 <li class="header-right__contact">
                     <a href="" class="header-right__link">
@@ -58,58 +56,60 @@
     </header>
     <main>
         <!--Герой-->
-        <section class="hero section">
-            <div class="hero container">
-                <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-                <button type="button" data-modal-open class="hero button-text current">Заказать услугу</button>
+        <section class="hero">
+            <div class="hero__text container">
+                <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
+                <button type="button" data-modal-open class="hero__button hero__button--current">Заказать
+                    услугу
+                </button>
             </div>
         </section>
         <!-- Специфика услуг-->
-        <section class="features section">
-            <div class="features container">
-                <ul class=" features-list">
-                    <li class="features-item">
+        <section class="features">
+            <div class="features__container">
+                <ul class=" features__list">
+                    <li class="features__item">
                         <div class="icon-background">
-                            <svg class="features-icon" width="70" height="70">
+                            <svg class="features__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Внимание к деталям</h3>
-                        <p class="features-text">Идейные соображения,а также начало повседневной работы по
+                        <h3 class="features__title">Внимание к деталям</h3>
+                        <p class="features__text">Идейные соображения,а также начало повседневной работы по
                             формированию позиции.
                         </p>
                     </li>
-                    <li class="features-item">
+                    <li class="features__item">
                         <div class="icon-background">
-                            <svg class="features-icon">
+                            <svg class="features__icon">
                                 <use href="./images/icons.svg#icon-clock" width="70" height="70"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Пунктуальность</h3>
-                        <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров
+                        <h3 class="features__title">Пунктуальность</h3>
+                        <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет
                             за собой.
                         </p>
                     </li>
-                    <li class="features-item">
+                    <li class="features__item">
                         <div class="icon-background">
-                            <svg class="features-icon">
+                            <svg class="features__icon">
                                 <use href="./images/icons.svg#icon-diagram" width="70" height="70"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Планирование</h3>
-                        <p class="features-text">Равным образом консультация с широким активом в значительной
+                        <h3 class="features__title">Планирование</h3>
+                        <p class="features__text">Равным образом консультация с широким активом в значительной
                             степени обуславливает.
                         </p>
                     </li>
-                    <li class="features-item">
+                    <li class="features__item">
                         <div class="icon-background">
-                            <svg class="features-icon">
+                            <svg class="features__icon">
                                 <use href="./images/icons.svg#icon-astronaut" width="70" height="70"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Современные технологии</h3>
-                        <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых
+                        <h3 class="features__title">Современные технологии</h3>
+                        <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.
                         </p>
                     </li>
