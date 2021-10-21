@@ -5,6 +5,3 @@
 @import './components/hero';
 @import './components/features';
 @import './utils/placeholders';
-.features {
-  @extend %list;
-}

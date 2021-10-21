@@ -1,18 +1,21 @@
-.features {
+.features__container {
   padding-bottom: 0;
 }
-.features__container {
-  background-color: tomato;
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 0;
 }
 .features__list {
+  width: 1170px;
   display: flex;
+  justify-content: center;
 }
-.features__list,
-.features__item {
+.features__list > .features__item {
   width: 270px;
 }
-.features__list,
-.features__item:not(:last-child) {
+
+.features__list > .features__item:not(:last-child) {
   padding: 0;
   margin-right: 30px;
 }
