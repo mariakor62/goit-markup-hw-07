@@ -101,7 +101,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .site-nav__link {
@@ -230,7 +230,7 @@ img {
   fill: #2196f3;
 }
 
-.hero {
+.hero .section {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -243,11 +243,11 @@ img {
   background-size: cover;
 }
 
-.hero__text {
+.hero {
   text-align: center;
 }
 
-.hero__title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
