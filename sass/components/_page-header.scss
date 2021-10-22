@@ -1,35 +1,33 @@
 .page-header {
   @include bordered($color);
-  max-width: 1600px;
 }
 
 .page-header__nav {
   @extend %align-center;
-  margin-left: 80px;
 }
 
 .site-nav {
   display: flex;
+  margin-right: 80px;
+}
+.site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-color;
+}
+.site-nav__link--current::after {
+  position: absolute;
+  content: '';
+  display: flex;
+  justify-content: center;
 
-  &__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $title-color;
-  }
-  &__link--current::after {
-    position: absolute;
-    content: '';
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    top: 76px;
-    left: 0;
-    border: 2px solid;
-    border-radius: 4px;
-    background-color: $accent-color;
-  }
+  width: 100%;
+  top: 76px;
+  left: 0;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: $accent-color;
 }
 .site-nav__item {
   position: relative;

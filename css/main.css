@@ -95,17 +95,13 @@ img {
 
 .page-header {
   border-bottom: 1px solid #ececec;
-  max-width: 1600px;
-}
-
-.page-header__nav {
-  margin-left: 80px;
 }
 
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 80px;
 }
 
 .site-nav__link {
