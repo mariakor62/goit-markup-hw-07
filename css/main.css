@@ -756,6 +756,7 @@ img {
 
 .footer-item__mail:hover,
 .footer-item__mail:focus {
+  cursor: pointer;
   color: #2196f3;
 }
 
