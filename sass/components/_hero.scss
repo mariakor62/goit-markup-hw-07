@@ -1,7 +1,8 @@
-.hero .section {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  outline: 1px solid red;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -14,7 +15,7 @@
 .hero {
   text-align: center;
 }
-.hero__title {
+.hero-ad__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -26,7 +27,7 @@
   margin-bottom: 30px;
 }
 
-.hero__button--current {
+.hero-button--current {
   min-width: 200px;
   height: 50px;
   background-color: $accent-color;
@@ -41,7 +42,7 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
-.hero__button {
+.hero-button {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -59,12 +60,12 @@
   align-items: center;
   text-align: center;
 }
-.hero__button--current {
+.hero-button--current {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button:hover,
-.hero__button:focus {
+.hero-button:hover,
+.hero-button:focus {
   min-width: 200px;
   padding: 10px 32px;
   font-weight: bold;
