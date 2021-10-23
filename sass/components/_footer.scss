@@ -2,10 +2,11 @@
   display: flex;
   padding: 60px 0 60px;
   background-color: #2f303a;
-}
-.footer-contacts {
-  display: flex;
-  align-items: baseline;
+
+  &-contacts {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .contact-items__address {
   margin-top: 20px;
