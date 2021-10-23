@@ -572,28 +572,7 @@ img {
   margin-right: 30px;
 }
 
-.customers__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .customers__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -634,14 +613,6 @@ img {
   margin-top: 20px;
 }
 
-.footer-item {
-  margin-bottom: 9px;
-}
-
-.studio {
-  margin-bottom: 20px;
-}
-
 .contact-items__text {
   margin-bottom: 9px;
 }
@@ -656,13 +627,6 @@ img {
 }
 
 .footer-right {
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: 70px;
   width: 206px;
   height: 80px;
@@ -671,15 +635,6 @@ img {
 .footer-link {
   width: 44px;
   height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 50%;
 }
 
@@ -722,7 +677,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-items__mail:hover .contact-items__mail:focus {
+.contact-items__mail:hover,
+.contact-items__mail:focus {
   cursor: pointer;
   color: #2196f3;
 }
@@ -926,15 +882,6 @@ img {
 
 .button-close {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   cursor: pointer;
   top: 8px;
   right: 8px;
@@ -1691,8 +1638,20 @@ img {
           align-items: baseline;
 }
 
-.contact-items {
+.contact-items, .footer-right {
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers__list, .customers__link, .footer-link, .button-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

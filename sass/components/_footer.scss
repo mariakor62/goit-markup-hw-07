@@ -9,22 +9,13 @@
 }
 .contact-items {
   @extend %block-centered;
-  &__address {
-    margin-top: 20px;
-  }
 }
-.footer-item {
-  margin-bottom: 9px;
+.contact-items__address {
+  margin-top: 20px;
 }
-
-.studio {
-  margin-bottom: 20px;
-}
-
 .list-icons {
   @extend %flexCentered;
 }
-
 .contact-items__text {
   margin-bottom: 9px;
 }
@@ -35,12 +26,10 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $bg-color;
 }
 .footer-right {
-  display: block;
-  justify-content: center;
-  align-items: center;
+  @extend %block-centered;
   margin-left: 70px;
   width: 206px;
   height: 80px;
@@ -48,13 +37,11 @@
 .footer-link {
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
   border-radius: 50%;
 }
 .footer-icon {
-  fill: #ffffff;
+  fill: $bg-color;
 }
 .footer-link {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -64,14 +51,14 @@
 }
 
 .footer-link .instagram {
-  fill: #ffffff;
+  fill: $bg-color;
 }
 .footer-link:hover,
 .footer-link:focus {
   cursor: pointer;
-  fill: #ffffff;
+  fill: $bg-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #2196f3;
+  background-color: $accent-color;
   border-radius: 50%;
 }
 
@@ -88,7 +75,7 @@
 .contact-items__mail:hover,
 .contact-items__mail:focus {
   cursor: pointer;
-  color: #2196f3;
+  color: $accent-color;
 }
 
 .contacts-tel {
@@ -100,19 +87,19 @@
 }
 .contacts-tel:hover,
 .contacts-tel:focus {
-  color: #2196f3;
+  color: $accent-color;
 }
 
 .text-title {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $bg-color;
   margin-bottom: 20px;
 }
 
 .twitter-current {
   margin: 0;
-  background-color: #2196f3;
-  fill: #ffffff;
+  background-color: $accent-color;
+  fill: $bg-color;
 }
