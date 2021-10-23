@@ -7,8 +7,7 @@
   padding-bottom: 0;
 }
 .features__list {
-  display: flex;
-  justify-content: center;
+  @extend %flexCentered;
 }
 .features__list > .features__item {
   width: 270px;
@@ -25,7 +24,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: $title-color;
 
   margin-bottom: 10px;
 }
@@ -36,7 +35,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $text-color;
 }
 .features__icon {
   width: 70px;
@@ -45,6 +44,6 @@
 .icon-background {
   height: 120px;
   @include centeredFlex(flex);
-  background-color: #f5f4fa;
+  background-color: $bg-fill;
   margin-bottom: 30px;
 }
