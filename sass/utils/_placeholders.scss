@@ -17,3 +17,12 @@
   display: flex;
   justify-content: center;
 }
+%aling-baseline {
+  display: flex;
+  align-items: baseline;
+}
+%block-centered {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}

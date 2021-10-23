@@ -1,24 +1,22 @@
 .footer {
   display: flex;
   padding: 60px 0 60px;
-  background-color: #2f303a;
+  background-color: $secondary-color;
 
   &-contacts {
-    display: flex;
-    align-items: baseline;
+    @extend %align-baseline;
   }
 }
-.contact-items__address {
-  margin-top: 20px;
+.contact-items {
+  @extend %block-centered;
+  &__address {
+    margin-top: 20px;
+  }
 }
 .footer-item {
   margin-bottom: 9px;
 }
-.contact-items {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
+
 .studio {
   margin-bottom: 20px;
 }
