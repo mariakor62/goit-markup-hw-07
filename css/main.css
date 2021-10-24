@@ -674,6 +674,7 @@ img {
 
 .contact-items__mail:hover,
 .contact-items__mail:focus {
+  cursor: pointer;
   color: #2196f3;
 }
 
@@ -1125,9 +1126,9 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
   border-radius: 4px;
   border: none;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1137,13 +1138,9 @@ img {
 }
 
 .projects-nav__button {
-  cursor: pointer;
-  background-color: #f5f4fa;
-}
-
-.projects-nav__button {
   display: inline-block;
   padding: 6px 22px;
+  background-color: #f5f4fa;
 }
 
 .projects-nav__button:hover,
