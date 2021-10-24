@@ -16,6 +16,9 @@
 .list-icons {
   @extend %flexCentered;
 }
+.contact-items__phone {
+  margin-top: 9px;
+}
 .contact-items__text {
   margin-bottom: 9px;
 }
