@@ -604,6 +604,10 @@ img {
   margin-top: 20px;
 }
 
+.contact-items__phone {
+  margin-top: 9px;
+}
+
 .contact-items__text {
   margin-bottom: 9px;
 }
@@ -670,7 +674,6 @@ img {
 
 .contact-items__mail:hover,
 .contact-items__mail:focus {
-  cursor: pointer;
   color: #2196f3;
 }
 
