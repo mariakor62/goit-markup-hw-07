@@ -73,8 +73,8 @@
   cursor: pointer;
   color: $accent-color;
 }
-.header-right__icon,
-.header-right__link {
+.header-right__link:hover .header-right__icon,
+.header-right__link:focus .header-right__icon {
   cursor: pointer;
   fill: $accent-color;
 }
