@@ -114,12 +114,6 @@ img {
 .site-nav__link--current::after {
   position: absolute;
   content: '';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   top: 76px;
   left: 0;
@@ -1578,7 +1572,7 @@ img {
           align-items: center;
 }
 
-.header-right__contact, .features__list, .cards__list, .image-title, .list-icons, .projects-nav__list {
+.site-nav__link--current::after, .header-right__contact, .features__list, .cards__list, .image-title, .list-icons, .projects-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

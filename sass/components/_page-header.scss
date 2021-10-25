@@ -17,8 +17,8 @@
 .site-nav__link--current::after {
   position: absolute;
   content: '';
-  display: flex;
-  justify-content: center;
+  @extend %flexCentered;
+
   width: 100%;
   top: 76px;
   left: 0;
