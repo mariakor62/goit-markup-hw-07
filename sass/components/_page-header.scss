@@ -1,26 +1,24 @@
 .page-header {
   @include bordered($color);
-}
-
-.page-header__nav {
-  @extend %align-center;
+  &__nav {
+    @extend %align-center;
+  }
 }
 
 .site-nav {
   display: flex;
   margin-right: 80px;
-}
-.site-nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $title-color;
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-color;
+  }
 }
 .site-nav__link--current::after {
   position: absolute;
   content: '';
-  display: flex;
-  justify-content: center;
+  @extend %flexCentered;
 
   width: 100%;
   top: 76px;
@@ -43,13 +41,12 @@
 .header-right {
   @include centeredFlex(flex);
   margin-left: auto;
-}
-.header-right__contact {
-  margin-left: 30px;
-}
-.header-right__contact:last-child {
+  &__contact {
+    margin-left: 30px;
+  &__contact:last-child {
   margin-right: 0;
 }
+  }
 .header-right__contact {
   display: flex;
   justify-content: center;

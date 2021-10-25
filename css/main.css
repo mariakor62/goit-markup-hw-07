@@ -114,12 +114,6 @@ img {
 .site-nav__link--current::after {
   position: absolute;
   content: '';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   top: 76px;
   left: 0;
@@ -1089,15 +1083,6 @@ img {
 }
 
 .checkbox-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 30px;
 }
 
@@ -1608,7 +1593,7 @@ img {
           align-items: center;
 }
 
-.features__list, .cards__list, .image-title, .list-icons, .projects-nav__list {
+.site-nav__link--current::after, .features__list, .cards__list, .image-title, .list-icons, .projects-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1636,7 +1621,7 @@ img {
           align-items: center;
 }
 
-.customers__list, .customers__link, .footer-link, .button-close {
+.customers__list, .customers__link, .footer-link, .button-close, .checkbox-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

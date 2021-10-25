@@ -7,7 +7,7 @@
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $title-color;
   margin-bottom: 12px;
 }
 .form-icon {
@@ -24,14 +24,14 @@
   margin-bottom: 10px;
 }
 .modal-field > .form-input {
-  outline-color: #2196f3;
+  outline-color: $accent-color;
   cursor: pointer;
 }
 
 .modal-field:focus-within {
-  fill: #2196f3;
+  fill: $accent-color;
   outline-width: 0.1px;
-  border-color: #2196f3;
+  border-color: $accent-color;
 }
 
 .form-input {
@@ -48,7 +48,7 @@
   line-height: 14px;
   letter-spacing: 0.01em;
   margin-bottom: 5px;
-  color: #757575;
+  color: $text-color;
 }
 
 .form-button {
@@ -60,16 +60,16 @@
   text-align: center;
   border: none;
   border-radius: 4px;
-  background-color: #2196f3;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
+  color: $bg-color;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button:hover,
 .form-button:focus {
-  background-color: #188ce8;
+  background-color: $btn-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -80,7 +80,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $text-color;
 }
 
 .submit-text {
@@ -89,15 +89,15 @@
   line-height: 30px;
   padding: 10px 55px;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: $bg-color;
 }
 
 .policy {
   text-decoration: underline;
-  color: #2196f3;
+  color: $accent-color;
 }
 .comments {
-  outline-color: #2196f3;
+  outline-color: $accent-color;
 }
 .comments {
   resize: none;
@@ -116,7 +116,7 @@
 }
 .icon:hover {
   cursor: pointer;
-  border-color: #2196f3;
+  border-color: $accent-color;
 }
 .checkbox {
   position: absolute;
@@ -140,14 +140,12 @@
 }
 
 .checkbox-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
   margin-bottom: 30px;
 }
 .checkbox:checked + .icon {
-  border-color: #2196f3;
-  background-color: #2196f3;
+  border-color: $accent-color;
+  background-color: $accent-color;
   background-image: url(../images/iconcheck.svg);
   background-size: contain;
   background-origin: border-box;
