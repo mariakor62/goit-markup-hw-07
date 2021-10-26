@@ -7,12 +7,12 @@
 .site-nav {
   display: flex;
   margin-left: 80px;
-  &__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $title-color;
-  }
+}
+.site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-color;
 }
 .site-nav__item {
   position: relative;
