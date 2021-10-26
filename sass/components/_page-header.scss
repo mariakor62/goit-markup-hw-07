@@ -6,13 +6,23 @@
 }
 .site-nav {
   display: flex;
-  margin-right: 80px;
-  &__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $title-color;
-  }
+  margin-left: 80px;
+}
+.site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-color;
+}
+.site-nav__item {
+  position: relative;
+  margin-left: 50px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title-color;
 }
 .site-nav__link--current::after {
   position: absolute;
@@ -25,16 +35,6 @@
   border: 2px solid;
   border-radius: 4px;
   background-color: $accent-color;
-}
-.site-nav__item {
-  position: relative;
-  margin-left: 50px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $title-color;
 }
 
 .header-right {
