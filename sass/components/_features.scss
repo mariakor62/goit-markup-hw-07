@@ -7,10 +7,10 @@
 
 .features__list {
   @extend %flexCentered;
-  & > .features__item {
+  & .features__item {
     width: 270px;
   }
-  & > .features__item:not(:last-child) {
+  & .features__item:not(:last-child) {
     padding: 0;
     margin-right: 30px;
   }

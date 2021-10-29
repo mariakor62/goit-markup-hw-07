@@ -14,7 +14,6 @@
 .cards__item:not(:last-child) {
   margin-right: 30px;
 }
-
 .item-thumb {
   position: relative;
 }
@@ -28,9 +27,6 @@
 }
 .image-title {
   @extend %flexCentered;
-}
-
-.image-title {
   font-weight: 700;
   font-size: 14px;
   font-style: normal;
