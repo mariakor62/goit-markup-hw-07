@@ -6,13 +6,13 @@
 }
 .site-nav {
   display: flex;
-  margin-left: 80px;
-}
-.site-nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $title-color;
+  margin-left: 93px;
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-color;
+  }
 }
 .site-nav__item {
   position: relative;
@@ -40,9 +40,9 @@
 .header-right {
   @extend %centered-flex;
   margin-left: auto;
-}
-.header-right__contact {
-  margin-left: 30px;
+  &__contact {
+    margin-left: 30px;
+  }
 }
 .header-right__contact:last-child {
   margin-right: 0;

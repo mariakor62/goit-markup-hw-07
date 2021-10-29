@@ -50,14 +50,11 @@
   letter-spacing: 0.06em;
   color: $bg-color;
   background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: $box-lighter-shadow;
 
   min-width: 200px;
   padding: 10px 32px;
-
-  display: inline-block;
-  align-items: center;
-  text-align: center;
+  @extend %inline-block-text;
 }
 .hero-button--current {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -72,6 +69,6 @@
   cursor: pointer;
   color: $bg-color;
   background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: $box-lighter-shadow;
   border-radius: 4px;
 }

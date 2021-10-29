@@ -19,26 +19,23 @@
 
 .modal-field {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   margin-bottom: 10px;
 }
-.modal-field > .form-input {
+.form-input {
   outline-color: $accent-color;
   cursor: pointer;
+
+  margin: 0;
+  padding: 10px 32px;
+  border: 0.3px solid $dark-blur;
+  border-radius: 3px;
 }
 
 .modal-field:focus-within {
   fill: $accent-color;
   outline-width: 0.1px;
   border-color: $accent-color;
-}
-
-.form-input {
-  margin: 0;
-  padding: 10px 32px;
-  border: 0.3px solid rgba(117, 117, 117, 0.5);
-  border-radius: 3px;
 }
 
 .modal-label {
@@ -52,26 +49,27 @@
 }
 
 .form-button {
-  display: flex;
+  @extend %text-align;
+
   margin: 0 auto;
   width: 200px;
   height: 50px;
 
-  text-align: center;
   border: none;
   border-radius: 4px;
   background-color: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: $box-lighter-shadow;
   color: $bg-color;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-button:hover,
-.form-button:focus {
-  background-color: $btn-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-color;
+    box-shadow: $box-lighter-shadow;
+    border-radius: 4px;
+  }
 }
 
 .agreement-text {
@@ -96,27 +94,37 @@
   text-decoration: underline;
   color: $accent-color;
 }
-.comments {
-  outline-color: $accent-color;
-}
+
 .comments {
   resize: none;
   padding: 8px;
-  border: 1px solid rgba(117, 117, 117, 0.5);
+  border: 1px solid $dark-blur;
   border-radius: 4px;
-}
-.comments::placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  outline-color: $accent-color;
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: $dark-blur;
+  }
 }
-.icon:hover {
-  cursor: pointer;
-  border-color: $accent-color;
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 1px solid $dark-blur;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    cursor: pointer;
+    border-color: $accent-color;
+  }
 }
 .checkbox {
   position: absolute;
@@ -127,16 +135,6 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-
-  border: 1px solid rgba(117, 117, 117, 0.5);
-  border-radius: 4px;
-  margin-right: 10px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-items {

@@ -1,50 +1,46 @@
 .form-field {
-  display: block;
-  justify-content: center;
-  align-items: center;
+  @extend %block-centered;
   width: 570px;
   height: 86px;
   margin-left: 93px;
-  background-color: #2F303A;
+  background-color: $secondary-color;
 }
 .fields {
   display: flex;
 }
-.text-sign {  
+.text-sign {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: $bg-color;
   margin-bottom: 20px;
 }
 .email-box::placeholder {
-  display: flex;
-  align-items: center;
+  @extend %align-center;
 
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.6);
-
+  color: $light-grey;
 }
 
 .email-box {
-  background-color: #2F303A;
+  background-color: $secondary-color;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid $light-grey;
   width: 358px;
   height: 50px;
-  box-shadow: (0px 4px 4px, rgba(0, 0, 0, 0.25));
+  box-shadow: $base-box-shadow;
   padding: 15px;
   outline: none;
-}
-.email-box:hover,
-.email-box:focus {
-  cursor: pointer;
-  border-color: #2196F3;
-  color: #FFFFFF;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-color: $accent-color;
+    color: $bg-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .button-submit {
   font-style: normal;
@@ -57,18 +53,15 @@
   height: 50px;
   padding: 10px 28px;
   cursor: pointer;
-  border: 1px solid #2F303A;
+  border: 1px solid $secondary-color;
   border-radius: 4px;
-  background-color: #2196F3;
-  color: #ffffff;
+  background-color: $accent-color;
+  color: $bg-color;
   margin-left: 12px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  @extend %text-centered;
 }
 .send-icon {
   margin-left: 10px;
-  fill: #FFFFFF;
- }
+  fill: $bg-color;
+}
